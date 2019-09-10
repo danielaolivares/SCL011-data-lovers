@@ -1,13 +1,39 @@
 /* Manejo del DOM */
-const all= window.LOL.data;//variable que engloba toda la data, campeones y popiedades.
+const allChamp= window.LOL.data;//variable que engloba toda la data, campeones y popiedades.
 //console.log(all);
-const recoverData= Object.keys(all);//palabra adelante :
+//const recoverKeys= Object.keys(allChamp);//palabra adelante :
 //console.log(recoverData);
-const recoverValues= Object.values(all);
+const recoverValues= Object.values(allChamp);
 //console.log(recoverValues);
+const fichaDeCampeones = recoverValues.filter(campeon => (campeon.name === "Aatrox"));
+console.log(fichaDeCampeones)
+// FUNCION FILTRO, estructura de la tabla donde iran los valores
 
+function campeonLista(lista) {
+    const tableStructure = document.getElementById("table");
+    // tabla de todos los campeones
+    tableStructure.innerHTML +=
+    `<tr class="tabla">
+        <th>IMAGEN</th>
+        <th>CAMPEÓN</th>
+        <th>TIPO</th>
+        <th>DIFICULTAD</th>
+    </tr>`
+    lista.forEach(campeon => {
 
-document.getElementById("listChampions").addEventListener("click",()=> {
+        tableStructure.innerHTML +=
+        `<tr>
+         <td><img id="iconImg" src="${campeon.img}" alt=""></td>
+         <td>${campeon.name}</td>
+         <td>${campeon.tags}</td>
+         <td>${campeon.info.difficulty}</td>
+         </tr>
+        `
+    });
+};
+
+campeonLista(recoverValues);
+/*document.getElementById("listChampions").addEventListener("click",()=> {
     //console.log("se escucha");
     document.getElementById("introduction").value="";// esto es para desaparecer
     // esto de abajo es lo que queremos mostrar
@@ -58,4 +84,4 @@ document.getElementById("listChampions").addEventListener("click",()=> {
     
         });
 });
-//-------------seccion 2 luchadores--------------------
+//-------------seccion 2 luchadores--------------------*/
