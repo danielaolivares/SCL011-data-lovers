@@ -83,14 +83,14 @@ document.getElementById("filterMage").addEventListener("click", function () {
     campeonLista(mage);
 });
 
-//FILTRO Soporte
+//FILTRO SOPORTE
 document.getElementById("filterSupport").addEventListener("click", function () {
     const support = recoverValues.filter(marks => (marks.tags.includes("Support")));
     document.getElementById("table").innerHTML = "";
     campeonLista(support);
 });
 
-//FILTRO Soporte
+//FILTRO ASSASSIN
 document.getElementById("filterAssasin").addEventListener("click", function () {
     const assasins = recoverValues.filter(marks => (marks.tags.includes("Assassin")));
     document.getElementById("table").innerHTML = "";
@@ -98,6 +98,55 @@ document.getElementById("filterAssasin").addEventListener("click", function () {
 });
 
 //CALCULOS
+
+
+
+const champTypePercentage = 0;
+
+for (i = 0; i < all.length; i++) {
+    if ()
+} 
+
+
+
+﻿
+﻿
+const champTypePercentage = 134;
+​
+for (i = 0; i < champTypePercentage.length; i++) {
+    i = (champTypePercentage * 20) /100
+    console.log(i);
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//GRAFICOS
+
+
+
+
+ 
 /*
 var data = {
     size: 230,
