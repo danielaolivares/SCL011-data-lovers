@@ -13,38 +13,12 @@ window.example = example;*/
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
-const all = LOL.data;
-let stopRecover = true;
-let recoverValues = Object.values(all);
-let recoverKeys = Object.keys(all);
-const fichaDeCampeones = recoverValues.filter(campeon => (campeon.name === "Aatrox"));
+const champList = window.LOL.data;
+window.champList=champList;
+//let stopRecover = true;
 
-// FUNCION FILTRO, estructura de la tabla donde iran los valores
 
-function campeonLista(lista) {
-    const tableStructure = document.getElementById("table");
-    // tabla de todos los campeones
-    tableStructure.innerHTML +=
-    `<tr class="tabla">
-        <th>IMAGEN</th>
-        <th>CAMPEÓN</th>
-        <th>TIPO</th>
-        <th>DIFICULTAD</th>
-    </tr>`
-    lista.forEach(campeon => {
 
-        tableStructure.innerHTML +=
-        `<tr>
-         <td><img id="iconImg" src="${campeon.img}" alt=""></td>
-         <td>${campeon.name}</td>
-         <td>${campeon.tags}</td>
-         <td>${campeon.info.difficulty}</td>
-         </tr>
-        `
-    });
-};
-
-campeonLista(recoverValues);
 
 //  EVENTOS DE FILTROS
 
