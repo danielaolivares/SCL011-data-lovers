@@ -1,0 +1,44 @@
+/* estilos de la navegacion interna */
+.nav ul li {
+    text-align: center;
+    display: inline;
+}
+
+/* estilos de los links */
+a {
+    color: white;
+    text-decoration-line: none;
+}
+
+/* especificos del logo en el header */
+.logoHeader {
+    float: left;
+}
+
+/* estilos de los filtros */
+.filterWrap {
+    text-align: center;
+    display: inline-flexbox;
+}
+
+/* temporalmente casillas de las imagenes al principio */
+h1, h2 {
+    text-align: center;
+}
+
+/* estilos de la tabla */
+table{
+    color:  white;
+    float: right;
+}
+
+/* detalles generales */
+body {
+    background-color: #49103d;  
+    color: white;
+    font-family: "open sans";
+}
+
+svg {
+    height: 200px; // the contents will scale to fit because of viewBox
+  }

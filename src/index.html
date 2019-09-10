@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-    <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Lovers</title>
+  <!-- fuente del texto -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- Cabecera -->
+  <header>
+    <nav class="nav">
+      <!-- logoHeader -->
+      <ul>
+        <li class="logoHeader">
+          <img src="https://codigoesports.com/wp-content/uploads/2017/08/Untitled-1.png" alt="Logotipo LOL" height="30">
+        </li>
+        <!-- navegacion interna del home -->
+        <li><a href="#">
+            ¿Que es un campeón ?
+          </a>
+        </li>
+        <li><a href="#">
+            | Líneas
+          </a>
+        </li>
+        <li><a href="#">
+            | Estrategias
+          </a>
+        </li>
+        <!-- Tabla de Lista de campeones -->
+        <li><a href="">
+            | Lista de Campeones
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  </div>
+  <!-- Filtro basado en el tipo de campeones -->
+  <div class="filterWrap">
+    <a href="#" id="filterAll">TODOS LOS CAMPEONES</a>
+    <a href="#" id="filterFighter">LUCHADORES</a>
+    <a href="#" id="filterMarksman">TIRADORES</a>
+    <a href="#" id="filterTank">TANQUES</a>
+    <a href="#" id="filterMage">MAGOS</a>
+    <a href="#" id="filterSupport">SOPORTE</a>
+    <a href="#" id="filterAssasin">ASESINOS</a>
+  </div>
+
+  <div id="counterInfo"></div>
+
+  <!-- tabla de campeones con sus respectivos tipos y dificultad -->
+
+    <table border="1">
+      <tbody id="table">
+      </tbody>
+    </table>
+
+<!-- CALCULOS -->
+
+<svg viewBox="-1 -1 2 2" style="transform: rotate(-90deg)"></svg>
+
+
+  <!-- scripts -->
+
+  <script src="./data/lol/lol.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+
+  <!-- footer -->
+  <footer> <img src="https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/2181/laboratoria.png"
+      alt="logo laboratoria" height="30">Creado por Veronika B. Daniela O. </footer>
+</body>
+
 </html>
