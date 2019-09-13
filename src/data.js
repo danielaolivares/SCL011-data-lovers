@@ -1,8 +1,10 @@
     
-    const filterChamp = (DATA, condition)=>{
-        const resultFilterChamp = DATA.filter(element  =>{
-        return element.tags === condition;
+    const filterChamp = (recoverValues,condition )=>{
+        console.log(recoverValues );
+        console.log(condition);
+        const resultFilterChamp = recoverValues.filter(element  =>{
+        return element.tags === condition
         });
         return resultFilterChamp;
     }
-    window.filterChamp = filterChamp;
+    

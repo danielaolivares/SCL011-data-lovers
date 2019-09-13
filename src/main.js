@@ -1,8 +1,8 @@
 const allChamp = window.LOL.data;
 //console.log(allChamp);
 let recoverValues= Object.values(allChamp);
-console.log(recoverValues)
-document.getElementById("filterAll").addEventListener("click", ()=>{
+//console.log(recoverValues)
+document.getElementById("ChampionList").addEventListener("change", ()=>{
   //console.log("ok");
   document.getElementById("filterWrap").innerHTML =`<div class="fila">
   <div class="col">IMAGEN</div>
@@ -24,9 +24,13 @@ document.getElementById("filterAll").addEventListener("click", ()=>{
   });
 
   //--------------filtro luchador-------------
-  document.getElementById("filterFighter").addEventListener("click",()=>{
+  let filterSelector= document.getElementById("filterSelector");
+  document.getElementById("filterSelector").addEventListener("change",()=>{
     document.getElementById("filterWrap").value="";
-    let condition = "figther"
-    filterChamp(recoverValues, condition)
+    
+   let condition= filterSelector.options[filterSelector.selectedIndex].value;
+    filterChamp(recoverValues, condition);
+    console.log(filterChamp);
+    //document.getElementById("filterWrap").innerHTML +=`${filterChamp(recoverValues, "figther")}`
   })
 
