@@ -1,14 +1,25 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+body {
+    background-color: #49103d;  
+    color: white;
+    font-family: "open sans";
+}
+
 #filterWrap{
     display: table;
     color:  white;
-    
 }
 
 .fila{
     display: table-row;
   }
-
-  .col{
+.col{
     display: table-cell;
     padding: 12px;
   }
@@ -30,7 +41,7 @@ a {
 }
 
 /* estilos de los filtros */
-.filterWrap {
+#showData {
     text-align: center;
     display: inline-flexbox;
 }
@@ -47,11 +58,6 @@ table{
 }
 
 /* detalles generales */
-body {
-    background-color: #49103d;  
-    color: white;
-    font-family: "open sans";
-}
 
 svg {
     height: 200px; /* the contents will scale to fit because of viewBox*/

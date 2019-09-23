@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Lovers</title>
+  <title>LOL</title>
   <!-- fuente del texto -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
@@ -41,17 +40,26 @@
       </ul>
     </nav>
   </header>
-  <div id="root"></div>
-  <select name="filterSelector" id="filterSelector">
-    <option value="filterAll">TODOS LOS CAMPEONES</option>
-    <option value="filterFighter">LUCHADORES</option>
-    <option value="filterMarksman">TIRADORES</option>
-    <option value="filterTank">TANQUES</option>
-    <option value="filterMage">MAGOS</option>
-    <option value="filterSupport">SOPORTE</option>
-    <option value="filterAssasin">ASESINOS</option>
-  </select>
-<div id="filterWrap"></div>
+  <div id="showChamp">
+    <h1>PERSONAJES</h1><button id="allChampion">TODOS LOS CAMPEONES</button>
+    <label>Filtrar por Campeon:</label>
+      <select name="selector" id="filterTypeChamp">
+        <option value="">Seleccione una</option>
+        <option value="Fighter">luchadores</option>
+        <option value="Tank">tanques</option>
+        <option value="Mage">magos</option>
+        <option value="Assassin">asesinos</option>
+        <option value="Support">soporte</option>
+        <option value="Marksman">tiradores</option>
+      </select>
+
+  <label>Ordenar por:</label>
+            <select name="selector" id="orderChamp">
+              <option value="">Seleccione una</option>
+              <option value="az">De la A a la Z</option>
+              <option value="za">De la Z a la A</option>
+            </select>
+<div id="showData"></div>
 
 <!-- CALCULOS -->
 
