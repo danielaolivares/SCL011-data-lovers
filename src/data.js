@@ -3,7 +3,7 @@
           if (sortOrder=="az"){
             const sortChamp = recoverValues.sort((a,b)=>{
               return a.id.localeCompare(b.id);
-              console.log(sortChamp)
+
             })
             return sortChamp;
           }
@@ -20,8 +20,7 @@
           const champFilter = recoverValues.filter(element => {
             return element.tags.includes(condition);
           });
-          return champFilter;
-          
+          return champFilter;  
         }
       }
       
