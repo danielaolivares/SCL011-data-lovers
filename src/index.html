@@ -8,40 +8,18 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div id="root">
   <!-- Cabecera -->
   <header>
     <nav class="nav">
       <!-- logoHeader -->
       <ul>
         <li class="logoHeader">
-          <img src="https://codigoesports.com/wp-content/uploads/2017/08/Untitled-1.png" alt="Logotipo LOL" height="30">
         </li>
-        <!-- navegacion interna del home -->
-        <li><a href="#">
-            ¿Que es un campeón ?
-          </a>
-        </li>
-        <li><a href="#">
-            | Líneas
-          </a>
-        </li>
-        <li><a href="#">
-            | Estrategias
-          </a>
-        </li>
-        <!-- Tabla de Lista de campeones -->
-        <li id="ChampionList">
-            | Lista de Campeones
-          
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div id="showChamp">
-    <h1>PERSONAJES</h1><button id="allChampion">TODOS LOS CAMPEONES</button>
+        <h1>Bienvenido a League of Legends, invocador. ¡Aquí encontrarás la información básica que necesitarás para prepararte y saltar a los Campos de la Justicia!</h1>
+      </header>
+  <div id="filterWrap ">
+    <h3>Campeones</h3><button id="allChampion">Todos los Campeones</button>
     <label>Filtrar por Campeon:</label>
       <select name="selector" id="filterTypeChamp">
         <option value="">Seleccione una</option>
@@ -52,7 +30,7 @@
         <option value="Support">soporte</option>
         <option value="Marksman">tiradores</option>
       </select>
-
+  </div>
   <label>Ordenar por:</label>
             <select name="selector" id="orderChamp">
               <option value="">Seleccione una</option>
@@ -60,21 +38,28 @@
               <option value="za">De la Z a la A</option>
             </select>
 <div id="showData"></div>
-
-<!-- CALCULOS -->
-
-<svg viewBox="-1 -1 2 2" style="transform: rotate(-90deg)"></svg>
-
-</div>
   <!-- scripts -->
-
+  <div>
+    <ol>
+    <li>Porcentaje de campeones divididos por tipo:</li>
+    <li>Tipo de Campeon      %</li>
+    <li id="percentageTotalFigther"></li>
+    <li id="percentageTotalMarksman"></li>
+    <li id="percentageTotalTank"></li>
+    <li id="percentageTotalMage"></li>
+    <li id="percentageTotalSupport"></li>
+    <li id="percentageTotalAssassin"></li>
+  </ol>
+  </div>
   <script src="./data/lol/lol.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
 
   <!-- footer -->
-  <footer> <img src="https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/2181/laboratoria.png"
-      alt="logo laboratoria" height="30">Creado por Veronika B. Daniela O. </footer>
+  <footer> <</>Laboratoria> ©Todos los derechos reservados | Creado por Veronika Brkich & Daniela Olivares
+  <br>
+  <img src="https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/2181/laboratoria.png"
+  alt="logo laboratoria" height="30">  </footer>
 </body>
 
 </html>

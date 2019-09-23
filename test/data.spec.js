@@ -1,6 +1,6 @@
 global.window = global;
 global.assert = require('chai').assert;
-require('../src/data');
+require('../src/data.js');
 require('../src/data/lol/lol.js')
 require('./data.spec.js');
 //ordenar
@@ -34,41 +34,43 @@ describe('data.order', () => {
   }); 
 
   describe('data.tags', () => {
-    const muestra= [{ 
+    const muestra2= [
         Aatrox: {
           id: "Aatrox",
          name: "Aatrox",
-         tags: ["Fighter", "Tank"],
+         tags: ["Fighter", "Mage"]
          },
          Irelia: {
           id: "Irelia",
           name: "Irelia",
-          tags: ["Fighter", "Assassin"],
+          tags: ["Support", "Assassin"]
          },
-         Sejuani: {
+         Sejuani {
           id: "Sejuani",
           name: "Sejuani",
-          tags: ["Tank", "Fighter"],
-         },}]
+          tags: ["Marksman", "Tank"]
+         }]
 
          it('debería ser una función', () => {
           assert.equal(typeof  window.filter.tags, 'function');
         });
         it('deberia retornar values de Aatrox,Irelia y Sejuani al filtrar por figther',() => { 
-          assert.deepEqual(window.filter.tags("Fighter",muestra),[{
+          assert.deepEqual(window.filter.tags(muestra2,"Fighter"),[{
             id: "Aatrox",
            name: "Aatrox",
-           tags: ["Fighter", "Tank"],
+           tags: ["Fighter", "Tank"]
            },
           {
             id: "Irelia",
             name: "Irelia",
-            tags: ["Fighter", "Assassin"],
+            tags: ["Fighter", "Assassin"]
            },
           {
             id: "Sejuani",
           name: "Sejuani",
-          tags: ["Tank", "Fighter"],
-          }]);})
+          tags: ["Tank", "Fighter"]
+          }]);
+        })
       
       });
+    ]});

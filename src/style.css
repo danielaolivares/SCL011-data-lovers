@@ -1,19 +1,19 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
 body {
-    background-color: #49103d;  
+    background-color: #332C41;  
     color: white;
     font-family: "open sans";
+    max-width: 1100px;
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #ffffff8e;
+    padding: 20px;
+    align-items: center;
 }
 
 #filterWrap{
     display: table;
     color:  white;
+    align-items: center;
 }
 
 .fila{
@@ -51,14 +51,24 @@ h1, h2 {
     text-align: center;
 }
 
-/* estilos de la tabla */
-table{
-    color:  white;
-    float: right;
+h3 {
+    padding: 20px;
+    text-decoration: underline;
+    /* centrado */
+    text-align: center;
 }
 
-/* detalles generales */
+footer {
+    padding: 0;
+    margin: 40px auto;
+    text-align: center;
+}
 
-svg {
-    height: 200px; /* the contents will scale to fit because of viewBox*/
-  }
+li {
+    margin: 0px;
+    padding: 0px;
+    /* elimina los puntitos de la lista */
+    list-style: none;
+    /* altura de la linea */
+    line-height: 30px;
+}
