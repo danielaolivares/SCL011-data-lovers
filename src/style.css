@@ -1,21 +1,22 @@
-body {
-    background-color: #332C41;  
-    color: white;
-    font-family: "open sans";
-    max-width: 1100px;
-    width: 90%;
-    margin: 20px auto;
-    border: 2px solid #ffffff8e;
-    padding: 20px;
-    align-items: center;
+#browser{
+    text-align: start;
+    display: inline;
+    list-style: none;
+    position: relative;
 }
-
-#filterWrap{
-    display: table;
-    color:  white;
-    align-items: center;
+.logoHeader, #information, #forum, #community, #news {
+    margin: 0px;
+    padding: 30px;
+    list-style: none;
+    line-height: 30px;
+    display: inline;
+    position: relative;
 }
-
+#footNote, #logoLaboratoria{
+    text-align:center;
+    position: relative;
+    
+}
 .fila{
     display: table-row;
   }
@@ -23,52 +24,3 @@ body {
     display: table-cell;
     padding: 12px;
   }
-/* estilos de la navegacion interna */
-.nav ul li {
-    text-align: center;
-    display: inline;
-}
-
-/* estilos de los links */
-a {
-    color: white;
-    text-decoration-line: none;
-}
-
-/* especificos del logo en el header */
-.logoHeader {
-    float: left;
-}
-
-/* estilos de los filtros */
-#showData {
-    text-align: center;
-    display: inline-flexbox;
-}
-
-/* temporalmente casillas de las imagenes al principio */
-h1, h2 {
-    text-align: center;
-}
-
-h3 {
-    padding: 20px;
-    text-decoration: underline;
-    /* centrado */
-    text-align: center;
-}
-
-footer {
-    padding: 0;
-    margin: 40px auto;
-    text-align: center;
-}
-
-li {
-    margin: 0px;
-    padding: 0px;
-    /* elimina los puntitos de la lista */
-    list-style: none;
-    /* altura de la linea */
-    line-height: 30px;
-}

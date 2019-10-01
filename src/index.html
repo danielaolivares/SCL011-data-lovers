@@ -1,65 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LOL</title>
-  <!-- fuente del texto -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <title> League of Legends</title>
 </head>
 <body>
-  <!-- Cabecera -->
   <header>
-    <nav class="nav">
-      <!-- logoHeader -->
+    <nav id="browser">
       <ul>
         <li class="logoHeader">
-        </li>
-        <h1>Bienvenido a League of Legends, invocador. ¡Aquí encontrarás la información básica que necesitarás para prepararte y saltar a los Campos de la Justicia!</h1>
-      </header>
-  <div id="filterWrap ">
-    <h3>Campeones</h3><button id="allChampion">Todos los Campeones</button>
-    <label>Filtrar por Campeon:</label>
-      <select name="selector" id="filterTypeChamp">
+           <a href="file:///C:/Users/Dani%20Olivares/Downloads/SCL011-data-lovers/src/index.html"> <img src="https://codigoesports.com/wp-content/uploads/2017/08/Untitled-1.png" alt="Logotipo LOL" height="70"></a>
+          </li>
+          <!-- navegacion interna del home -->
+          <li id="information"><a href="https://las.leagueoflegends.com/es/game-info/" target="_blank">
+              Información del Juego</a>            
+          </li>
+          <li id="forum"><a href="https://boards.las.leagueoflegends.com/es/" target="_blank">
+               Foros
+            </a>
+          </li>
+          <li id="community"><a href="https://las.leagueoflegends.com/es/page/unete-la-comunidad-de-league-legends" target="_blank">
+               Comunidad
+            </a>
+          </li>
+          <!-- Tabla de Lista de campeones -->
+          <li id="news"><a href="https://las.leagueoflegends.com/es/news/" target="_blank">  Noticias</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+  
+<section id="allGroup">
+      <label>Filtrar por Campeon:</label>
+      <select name="selector" id="filterTypeChampion">
         <option value="">Seleccione una</option>
-        <option value="Fighter">luchadores</option>
-        <option value="Tank">tanques</option>
-        <option value="Mage">magos</option>
-        <option value="Assassin">asesinos</option>
-        <option value="Support">soporte</option>
-        <option value="Marksman">tiradores</option>
+        <option value="Fighter">Luchadores</option>
+        <option value="Tank">Tanques</option>
+        <option value="Mage">Magos</option>
+        <option value="Assassin">Asesinos</option>
+        <option value="Support">Soporte</option>
+        <option value="Marksman">Tiradores</option>
       </select>
-  </div>
-  <label>Ordenar por:</label>
-            <select name="selector" id="orderChamp">
-              <option value="">Seleccione una</option>
-              <option value="az">De la A a la Z</option>
-              <option value="za">De la Z a la A</option>
-            </select>
-<div id="showData"></div>
-  <!-- scripts -->
-  <div>
-    <ol>
-    <li>Porcentaje de campeones divididos por tipo:</li>
-    <li>Tipo de Campeon      %</li>
-    <li id="percentageTotalFigther"></li>
-    <li id="percentageTotalMarksman"></li>
-    <li id="percentageTotalTank"></li>
-    <li id="percentageTotalMage"></li>
-    <li id="percentageTotalSupport"></li>
-    <li id="percentageTotalAssassin"></li>
-  </ol>
-  </div>
+      
+<article id="showData">
+ </article>
+</section>  
+  <footer id="footNote"> Laboratoria ©Todos los derechos reservados | Creado por Daniela Olivares
+  
+  <div id="logoLaboratoria"><a href="https://www.laboratoria.la" target="_blank"><img src="https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/2181/laboratoria.png"
+  alt="logo laboratoria" height="30"></a></div></footer>
   <script src="./data/lol/lol.js"></script>
   <script src="data.js"></script>
-  <script src="main.js"></script>
-
-  <!-- footer -->
-  <footer> <</>Laboratoria> ©Todos los derechos reservados | Creado por Veronika Brkich & Daniela Olivares
-  <br>
-  <img src="https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/2181/laboratoria.png"
-  alt="logo laboratoria" height="30">  </footer>
+  <script src="main.js"></script> 
 </body>
-
 </html>

@@ -5,72 +5,61 @@ require('../src/data/lol/lol.js')
 require('./data.spec.js');
 //ordenar
 describe('data.order', () => {
-  const muestra= [{
-      MissFortune: {
-      id:"MissFortune",
-      info: { difficulty: 1}
+  const muestra= [
+      { 
+      name:"MissFortune",
+     
     },
-    Darius: {
-        id:"Darius",
-        info: {difficulty: 2}
+    { 
+        name:"Darius",
+        
+    },
+      { 
+        name: "Braum",
       },
-      Braum: {
-        id: "Braum",
-          info: {difficulty: 3},
-          }
-        }];
+          
+      ];
   
   it('debería ser una función', () => {
     assert.equal(typeof window.sort.order, 'function');
   });
 
 
-    it('deberia retornar en orden: MissFortune, Darius, Braum al ordenar por nombre de Z a A',() =>{
-      assert.deepEqual(window.sort.order("idZ_A",muestra),
-      [{id:"MissFortune", info: {difficulty:1}},
-      {id:"Darius", info: {difficulty:2}},
-       {id:"Braum", info: {difficulty:3}}]
-    )});
-  }); 
+    it('deberia retornar en orden: Braum, Darius, MissFortune al ordenar por nombre de A a Z',() =>{
+      assert.deepEqual(window.sort.order((muestra,"name"),
+      [ "Braum",
+      "Darius",
+      "MissFortune"]
+    ))});
+  });
+ 
 
   describe('data.tags', () => {
     const muestra2= [
-        Aatrox: {
+         {
           id: "Aatrox",
-         name: "Aatrox",
          tags: ["Fighter", "Mage"]
          },
-         Irelia: {
-          id: "Irelia",
-          name: "Irelia",
-          tags: ["Support", "Assassin"]
+         {
+          id: "Bard",
+          name: "Bard",
+          tags: ["Support", "Mage"]
          },
-         Sejuani {
-          id: "Sejuani",
-          name: "Sejuani",
-          tags: ["Marksman", "Tank"]
-         }]
+         {
+          id: "Caitlyn",
+          name: "Caitlyn",
+          tags: ["Marksman"]
+         }
+        ]
 
          it('debería ser una función', () => {
           assert.equal(typeof  window.filter.tags, 'function');
         });
-        it('deberia retornar values de Aatrox,Irelia y Sejuani al filtrar por figther',() => { 
+        it('deberia retornar values de Aatroxal filtrar por figther',() => { 
           assert.deepEqual(window.filter.tags(muestra2,"Fighter"),[{
             id: "Aatrox",
-           name: "Aatrox",
-           tags: ["Fighter", "Tank"]
-           },
-          {
-            id: "Irelia",
-            name: "Irelia",
-            tags: ["Fighter", "Assassin"]
-           },
-          {
-            id: "Sejuani",
-          name: "Sejuani",
-          tags: ["Tank", "Fighter"]
-          }]);
-        })
+           tags: ["Fighter", "Mage"]
+           }]);
+        });
       
-      });
-    ]});
+});
